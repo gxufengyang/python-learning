@@ -1,7 +1,7 @@
 #Python3.7.3
 #读取和简单统计neuron_data.txt文件内容
 #统计项包括：加入标准差。
-#将结果格式化地写入neu_results.txt文件中。文件会在当前工作文件夹找到。
+#将结果格式化地写入neu_results_v2.txt文件中。文件会在当前工作文件夹找到。
 neu = []
 for value in open('neuron_data.txt', 'r'):
   neu.append(
@@ -23,7 +23,7 @@ for len_value in neu:
 stddev = math.sqrt(sum(sq_data) / len(sq_data))
 
 neu.sort() #易错点1. sort代码的位置，在output之前一步
-output = open('neu_results.txt', 'w')
+output = open('neu_results_v2.txt', 'w')
 output.write('number of dendritic length:   % 4i \n' % (n)) #易错点2. 两个%都在write()的括号里
 output.write('total dendritic length:       % 7.2f \n' % (total)) #而第二个%用作指定输入变量，不应在引号内变成字符
 output.write('mean dendritic length:        % 7.2f \n' % (average))

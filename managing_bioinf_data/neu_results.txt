@@ -1,0 +1,7 @@
+number of dendritic length:      9 
+total dendritic length:         1658.07 
+mean dendritic length:         184.23 
+shortest dentritic length:      16.38 
+longest dengdritic length:     441.46 
+                               346.00 
+                                300.00 
